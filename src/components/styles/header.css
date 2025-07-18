@@ -1,0 +1,26 @@
+.logo-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.wine-logo {
+  width: 100px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.wine-logo:hover {
+  filter: drop-shadow(0 0 1.5em rgba(77, 7, 40, 0.8));
+  animation: rodar 2s infinite ease-in-out;
+}
+
+/* Animación más suave y natural */
+@keyframes rodar {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+}
